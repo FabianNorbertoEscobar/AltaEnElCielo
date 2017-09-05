@@ -1,4 +1,4 @@
-package AltaEnElCielo;
+package altaEnElCielo;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -126,7 +126,11 @@ public class AltaEnElCielo extends EjercicioOIA {
 		buffer.newLine();
 		buffer.write(String.valueOf(String.valueOf(this.carretel)));
 		buffer.newLine();
-		buffer.write(this.largoSubsecuenciaMaxima - 1 + " " + this.banderaA + " " + this.banderaB);
+		if (this.largoSubsecuenciaMaxima < 1) {
+			buffer.write(String.valueOf(0));
+		} else {
+			buffer.write(this.largoSubsecuenciaMaxima - 1 + " " + this.banderaA + " " + this.banderaB);
+		}
 		buffer.close();
 	}
 }

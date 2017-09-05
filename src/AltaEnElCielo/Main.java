@@ -1,4 +1,4 @@
-package AltaEnElCielo;
+package altaEnElCielo;
 
 import java.io.File;
 import java.io.FileNotFoundException;
